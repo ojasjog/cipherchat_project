@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "cipherchat_project_backend": {
+      "main": "src/cipherchat_project_backend/main.mo",
+      "type": "motoko"
+    },
+    "cipherchat_project_frontend": {
+      "dependencies": [
+        "cipherchat_project_backend"
+      ],
+      "source": [
+        "src/cipherchat_project_frontend/public"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
